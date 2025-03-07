@@ -136,7 +136,7 @@ function ageIncrement(ageField) {
     else {
         ageField.age += 2
     }
-    updated_at = Date();// where to put it?
+    ageField.updated_at = Date()
     
     return ageField;
 }
@@ -166,6 +166,7 @@ console.log(object4)
 
 function incrementAge2(itemAge) {
     itemAge.age +=1
+    itemAge.updated_at = Date()
     return itemAge;
 }
 
